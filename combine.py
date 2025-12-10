@@ -1,6 +1,4 @@
 import os
-from pathlib import Path
-import shutil
 import zipfile
 
 import pandas as pd
@@ -14,6 +12,9 @@ def download_file(url, dest_path):
     with open(dest_path, "wb") as f:
         for chunk in response.iter_content(chunk_size=8192):
             f.write(chunk)
+
+if not os.path.isdir("data"):
+    os.makedirs("data")
 
 month_dfs = []
 
