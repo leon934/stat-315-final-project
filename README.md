@@ -26,5 +26,12 @@ docker pull loen93/stat315-data-project:final2
 ```
 docker run -p 8888:8888 loen93/stat315-data-project:final2
 ```
+Then, open http://localhost:8888/notebooks/data_analysis.ipynb.
+
+If port 8888 is already in use on your computer by Docker, run this command instead:
+```
+docker run -p 9999:8888 loen93/stat315-data-project:final2
+```
+Then, open http://localhost:9999/notebooks/data_analysis.ipynb.
 
 The content is mainly located in `data_analysis.ipynb`, with `combine.py` being a simple script to download the dataset.
