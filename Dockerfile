@@ -18,5 +18,4 @@ COPY README.md .
 # Expose Jupyter port
 EXPOSE 8888
 
-# Start Jupyter when container runs
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--NotebookApp.token=''"]

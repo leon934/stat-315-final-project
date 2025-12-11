@@ -17,12 +17,14 @@ In order to obtain the data used for this project, run `combine.py` to download 
 1. First pull the image from Docker Hub through the command:
 
 ```
-docker pull p0kes/divvy_analysis
+docker pull loen93/stat315-data-project:final2
 
 ```
 
 2. Then to run the container, the following command is used:
 
 ```
-docker run -p 8888:8888 p0kes/divvy_analysis
+docker run -p 8888:8888 loen93/stat315-data-project:final2
 ```
+
+The content is mainly located in `data_analysis.ipynb`, with `combine.py` being a simple script to download the dataset.
